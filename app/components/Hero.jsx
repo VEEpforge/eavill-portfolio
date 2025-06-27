@@ -1,4 +1,6 @@
+'use client';
 import { assets } from '@/assets/assets'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
 
@@ -22,13 +24,20 @@ const Hero = () => {
           across digital and physical spaces.<br />
           <span className='italic text-blue-800'>Building cool stuff and solving problems</span>
         </div>
-        <div className='w-full pl-[3vw] items-start justify-start mt-[5vw] lg:mt-[2vw]'>
-          <button className='mt-[5vw] lg:mt-[2vw] px-[3vw] py-[1vw] border-2 border-zinc-950 text-zinc-950 uppercase rounded-full font-satoshi font-medium text-lg  hover:text-blue-800 hover:border-blue-800 transition-colors'>
+        <div className='w-full flex p-[3vw] items-center lg:justify-start justify-center mt-[5vw] lg:mt-[2vw]'>
+          {/* <button className='mt-[5vw] lg:mt-[2vw] px-[3vw] py-[1vw] border-2 border-zinc-950 text-zinc-950 uppercase rounded-full font-satoshi font-medium text-lg  hover:text-blue-800 hover:border-blue-800 transition-colors'>
             <a href="#projects">Scroll to Explore</a>
-          </button>
+          </button> */}
+          <Button
+            variant='outline'
+            className='font-satoshi uppercase font-medium text-lg mt-[5vh] lg:mt-[2vh] px-[3vw] py-[3vh] rounded-full border-2 border-zinc-950 hover:border-blue-800 hover:text-blue-800 transition-colors'
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+            Scroll to Explore
+          </Button>
         </div>
       </div>
-      <div className='flex items-end justify-end mt-[10vw] lg:mt-0 lg:h-screen pb-[2vw] w-1/3'>
+      <div className='flex items-end justify-end mt-[10vw] lg:mt-0 lg:h-screen pb-[2vw] pr-[3vw] w-1/3'>
         <Image
           src={assets.cube}
           alt="Description of image"
