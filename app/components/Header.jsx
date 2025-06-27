@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 z-50 w-full bg-neutral-50/75 backdrop-blur-sm border-b border-dotted border-b-zinc-300 transition-transform duration-300",
+        "fixed top-0 left-0 z-50 w-full bg-zinc-100/75 backdrop-blur-sm border-b border-dotted border-b-zinc-300 transition-transform duration-300",
         visible ? "translate-y-0" : "-translate-y-full"
       )}
     >
