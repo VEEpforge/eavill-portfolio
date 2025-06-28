@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import cn from "classnames"; // Assuming you have a utility for classnames
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Header = () => {
   const [visible, setVisible] = useState(true);
@@ -43,6 +44,7 @@ const Header = () => {
               href="#services"
               className="text-sm tracking-wide"
               variant="link"
+              onClick={() => window.scrollTo({ top: document.getElementById("services").offsetTop, behavior: 'smooth' })}
             >
               SERVICES
             </Button>
@@ -58,17 +60,20 @@ const Header = () => {
               href="#contact"
               className="text-sm tracking-wide"
               variant="link"
+              onClick={() => window.scrollTo({ top: document.getElementById("contact").offsetTop, behavior: 'smooth' })}
             >
               CONTACT
             </Button>
             <Button
-              // href='./assets/EE_Villanueva_CV2.pdf'
-              asChild
               className="text-sm tracking-wide"
               variant="link"
-              download
             >
-              <a href='/assets/EE_VILLANUEVA_CV2.pdf' download>RESUME</a>
+              <Link
+                href='https://drive.google.com/file/d/1oK-MQmMRE0dM57BeTtRhdj4VtwbPuKbn/view?usp=sharing'
+                target="_blank"
+              >
+                RESUME
+              </Link>
             </Button>
           </nav>
         </div>
