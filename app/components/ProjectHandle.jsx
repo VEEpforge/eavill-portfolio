@@ -23,20 +23,20 @@ const ProjectHandle = ({id, title, description, link, date, deliverables,images}
           <div className='flex flex-col justify-between h-full'>
             <div>
               Live Site <br/>
-              <a href={link} target='_blank' className='hover:text-blue-800'>{link}</a>
+              <a href={link} target='_blank' className='text-zinc-600 hover:text-blue-800'>{link}</a>
             </div>
-            <div>
+            {/* <div>
               View Details
-            </div>
+            </div> */}
           </div>
           <div className='flex flex-col justify-between h-full'>
             <div>
               Published<br/>
-              {date}
+              <p className='text-zinc-600'>{date}</p>
             </div>
-            <div>
+            {/* <div>
               Github
-            </div>
+            </div> */}
           </div>
           <div className='text-right'>
             Deliverables <br/>

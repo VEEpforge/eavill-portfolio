@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import cn from "classnames"; // Assuming you have a utility for classnames
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [visible, setVisible] = useState(true);
@@ -30,21 +31,44 @@ const Header = () => {
         <div className="flex items-center justify-between p-4 px-[3vw] text-black">
           <div className="text-xl text-zinc-950 font-extrabold tracking-wide font-satoshi">EVill</div>
           <nav className="hidden lg:flex space-x-4">
-            <a href="#projects" className="text-sm tracking-wide">
+            <Button
+              // href="#projects"
+              className="text-sm tracking-wide"
+              variant="link"
+              onClick={() => window.scrollTo({ top: document.getElementById("projects").offsetTop, behavior: 'smooth' })}
+            >
               PROJECTS
-            </a>
-            <a href="#about" className="text-sm tracking-wide">
-              ABOUT
-            </a>
-            <a href="#" className="text-sm tracking-wide">
-              RESUME
-            </a>
-            <a href="#services" className="text-sm tracking-wide">
+            </Button>
+            <Button
+              href="#services"
+              className="text-sm tracking-wide"
+              variant="link"
+            >
               SERVICES
-            </a>
-            <a href="#contact" className="text-sm tracking-wide">
+            </Button>
+            <Button
+              // href="#about"
+              className="text-sm tracking-wide"
+              variant="link"
+              onClick={() => window.scrollTo({ top: document.getElementById("about").offsetTop, behavior: 'smooth' })}
+            >
+              ABOUT
+            </Button>
+            <Button
+              href="#contact"
+              className="text-sm tracking-wide"
+              variant="link"
+            >
               CONTACT
-            </a>
+            </Button>
+            <Button
+              // href='./assets/EE_Villanueva_CV2.pdf'
+              className="text-sm tracking-wide"
+              variant="link"
+              download
+            >
+              <a href='assets/EE_VILLANUEVA_CV2.pdf' download>RESUME</a>
+            </Button>
           </nav>
         </div>
       </div>

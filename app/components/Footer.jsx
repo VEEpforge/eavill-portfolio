@@ -8,9 +8,19 @@ const Footer = () => {
   return (
     <footer className='fixed bottom-0 left-0 z-50 w-full text-white mix-blend-difference font-satoshi'>
       <div className='flex flex-row items-center justify-between px-[3vw] text-[2vw] lg:text-[1vw]'>
-        <a className='flex items-center justify-center'>EZRA VILLANUEVA <Copyright className='inline h-[2vh]' /> 2025</a>
-        <a>LINKEDIN</a>
-        <a>GITHUB</a>
+        <p className='flex items-center justify-center'>EZRA VILLANUEVA <Copyright className='inline h-[2vh]' /> 2025</p>
+        <Link
+          href='https://www.linkedin.com/in/ezraearlvillanueva'
+          target='_blank'
+        >
+          LINKEDIN
+        </Link>
+        <Link
+          href='https://github.com/VEEpforge'
+          target='_blank'
+        >
+          GITHUB
+        </Link>
         {/* <Link href='#' be></Link> */}
         <Button
           variant='link'
