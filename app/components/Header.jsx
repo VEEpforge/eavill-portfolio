@@ -63,11 +63,12 @@ const Header = () => {
             </Button>
             <Button
               // href='./assets/EE_Villanueva_CV2.pdf'
+              asChild
               className="text-sm tracking-wide"
               variant="link"
               download
             >
-              <a href='assets/EE_VILLANUEVA_CV2.pdf' download>RESUME</a>
+              <a href='/assets/EE_VILLANUEVA_CV2.pdf' download>RESUME</a>
             </Button>
           </nav>
         </div>
