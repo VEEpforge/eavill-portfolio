@@ -4,7 +4,7 @@ import ProjectImages from './projects/ProjectImages'
 const ProjectHandle = ({id, title, description, link, date, deliverables,images}) => {
   return (
     <div className='flex flex-col gap-y-[6vh] lg:flex-row w-full justify-between space-x-[2vw]'>
-      <div className=' h-full bg-zinc-200 rounded-lg shadow-lg flex items-center justify-center w-full'>
+      <div className=' h-full bg-zinc-200 flex items-center justify-center w-full'>
         <ProjectImages
           images={images}
         />

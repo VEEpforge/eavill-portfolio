@@ -34,7 +34,7 @@ const Header = () => {
           <nav className="hidden lg:flex space-x-4">
             <Button
               // href="#projects"
-              className="text-sm tracking-wide"
+              className="text-sm tracking-wide hover:text-blue-800 transition-colors duration-300"
               variant="link"
               onClick={() => window.scrollTo({ top: document.getElementById("projects").offsetTop, behavior: 'smooth' })}
             >
@@ -42,7 +42,7 @@ const Header = () => {
             </Button>
             <Button
               href="#services"
-              className="text-sm tracking-wide"
+              className="text-sm tracking-wide hover:text-blue-800 transition-colors duration-300"
               variant="link"
               onClick={() => window.scrollTo({ top: document.getElementById("services").offsetTop, behavior: 'smooth' })}
             >
@@ -50,7 +50,7 @@ const Header = () => {
             </Button>
             <Button
               // href="#about"
-              className="text-sm tracking-wide"
+              className="text-sm tracking-wide hover:text-blue-800 transition-colors duration-300"
               variant="link"
               onClick={() => window.scrollTo({ top: document.getElementById("about").offsetTop, behavior: 'smooth' })}
             >
@@ -58,14 +58,14 @@ const Header = () => {
             </Button>
             <Button
               href="#contact"
-              className="text-sm tracking-wide"
+              className="text-sm tracking-wide hover:text-blue-800 transition-colors duration-300"
               variant="link"
               onClick={() => window.scrollTo({ top: document.getElementById("contact").offsetTop, behavior: 'smooth' })}
             >
               CONTACT
             </Button>
             <Button
-              className="text-sm tracking-wide"
+              className="text-sm tracking-wide hover:text-blue-800 transition-colors duration-300"
               variant="link"
             >
               <Link

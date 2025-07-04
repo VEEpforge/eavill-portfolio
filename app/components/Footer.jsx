@@ -12,12 +12,14 @@ const Footer = () => {
         <Link
           href='https://www.linkedin.com/in/ezraearlvillanueva'
           target='_blank'
+          className='hover:text-amber-300 transition-colors duration-300'
         >
           LINKEDIN
         </Link>
         <Link
           href='https://github.com/VEEpforge'
           target='_blank'
+          className='hover:text-amber-300 transition-colors duration-300'
         >
           GITHUB
         </Link>

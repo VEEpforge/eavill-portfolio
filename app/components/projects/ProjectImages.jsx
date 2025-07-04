@@ -12,7 +12,7 @@ const ProjectImages = ({images}) => {
               <Card className='p-0'>
                 <CardContent className="w-full h-full p-0">
                   {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
-                  <img src={image.src} alt={`Project Image ${idx+1}`} className='w-full h-full rounded-lg' />
+                  <img src={image.src} alt={`Project Image ${idx+1}`} className='w-full h-full' />
                 </CardContent>
               </Card>
             </div>
